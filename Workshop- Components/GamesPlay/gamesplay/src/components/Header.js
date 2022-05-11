@@ -1,6 +1,16 @@
 const Header = () => {
+   
+   const OnHeaderClick = (e) => {
+    e.preventDefault();
+
+    if (e.target.tagName == 'A') {
+       let url = new URL(e.target.href);
+       
+    }
+   };
+   
     return (
-        <header>
+        <header onClick={OnHeaderClick}>
             <h1><a class="home" href="/home">GamesPlay</a></h1>
             <nav>
                 <a href="/games">All games</a>
