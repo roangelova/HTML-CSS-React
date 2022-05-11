@@ -1,4 +1,4 @@
-import { useState, createElement} from 'react';
+import { useState } from 'react';
 
 import Header from "./components/Header";
 import WelcomeWorld from "./components/WelcomeWorld";
@@ -15,13 +15,13 @@ function App() {
   const [page, setPage] = useState('/home');
 
   const routes = {
-    '/home': WelcomeWorld,
-    '/create-game': CreateGame,
-    '/login': Login,
-    '/register': Register,
-    '/games': GameCatalog,
-    '/details/:id': GameDetails,
-    '/edit/:id': EditGame
+    '/home': <WelcomeWorld />,
+    '/create-game': <CreateGame />,
+    '/login': <Login />,
+    '/register': <Register />,
+    '/games': <GameCatalog />,
+    '/details/:id': <GameDetails />,
+    '/edit/:id': <EditGame />
   }
 
   const navigationChangeHandler = (path) => {
@@ -33,7 +33,7 @@ function App() {
       <Header
         navigationChangeHandler={navigationChangeHandler} />
       <main id="main-content">
-        {createElement(routes[page]) ||
+        {routes[page] ||
           <h2>No sich page found!</h2>}
       </main>
     </div>
