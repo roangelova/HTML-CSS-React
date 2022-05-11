@@ -8,6 +8,7 @@ import GameCatalog from "./components/GameCatalog";
 import GameDetails from "./components/GameDetails";
 import Login from "./components/Login";
 import Register from "./components/Register";
+import ErrorPage from './components/ErrorPage';
 
 
 function App() {
@@ -34,7 +35,7 @@ function App() {
         navigationChangeHandler={navigationChangeHandler} />
       <main id="main-content">
         {routes[page] ||
-          <h2>No sich page found!</h2>}
+          <ErrorPage />}
       </main>
     </div>
   );
