@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import WelcomeWorld from "./components/WelcomeWorld";
 import CreateGame from "./components/CreateGame";
 import EditGame from "./components/EditGame";
-import GameCatalog from "./components/GameCatalog";
+import GameCatalog from "./components/GameCatalog/GameCatalog";
 import GameDetails from "./components/GameDetails";
 import Login from "./components/Login";
 import Register from "./components/Register";
