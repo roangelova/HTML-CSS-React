@@ -1,9 +1,9 @@
 const Login = () => {
     return (
-        <section id="login-page" class="auth">
+        <section id="login-page" className="auth">
         <form id="login">
 
-            <div class="container">
+            <div className="container">
                 <div class="brand-logo"></div>
                 <h1>Login</h1>
                 <label htmlFor="email">Email:</label>

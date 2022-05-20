@@ -1,5 +1,6 @@
 import * as gameService from "../services/GameService.js";
 import { useEffect, useState } from 'react';
+import LatestGameCard from "./LatestGameCard";
 
 const WelcomeWorld = () => {
 
@@ -15,7 +16,7 @@ const WelcomeWorld = () => {
     return (
         <section id="welcome-world">
 
-            <div class="welcome-message">
+            <div className="welcome-message">
                 <h2>ALL new games are</h2>
                 <h3>Only in GamesPlay</h3>
             </div>
@@ -24,9 +25,16 @@ const WelcomeWorld = () => {
             <div id="home-page">
                 <h1>Latest Games</h1>
 
-                
-                
-                <p class="no-articles">No games yet</p>
+                {
+                    games.length > 0
+                        ? games.map(x =>
+                            <LatestGameCard
+                                key={x._id}
+                                game={x}
+                            />)
+                        : <p className="no-articles">No games yet</p>
+                }
+
             </div>
         </section>
     )

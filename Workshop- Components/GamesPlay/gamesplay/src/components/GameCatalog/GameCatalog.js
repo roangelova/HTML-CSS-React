@@ -22,7 +22,7 @@ const GameCatalog = ({
             {
                 games.length > 0
                     ? games.map(x => <GameCard key={x._id} game={x} navigationChangeHandler={navigationChangeHandler} />)
-                    : <h3 class="no-articles">No articles yet</h3>
+                    : <h3 className="no-articles">No articles yet</h3>
             }
 
         </section>

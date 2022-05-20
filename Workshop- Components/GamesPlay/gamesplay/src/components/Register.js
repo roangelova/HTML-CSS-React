@@ -3,7 +3,7 @@ const Register = () => {
         <section id="register-page" className="content auth">
             <form id="register">
                 <div className="container">
-                    <div class="brand-logo"></div>
+                    <div className="brand-logo"></div>
                     <h1>Register</h1>
 
                     <label for="email">Email:</label>
@@ -15,9 +15,9 @@ const Register = () => {
                     <label for="con-pass">Confirm Password:</label>
                     <input type="password" name="confirm-password" id="confirm-password" />
 
-                    <input class="btn submit" type="submit" value="Register" />
+                    <input className="btn submit" type="submit" value="Register" />
 
-                    <p class="field">
+                    <p className="field">
                         <span>If you already have profile click <a href="#">here</a></span>
                     </p>
                 </div>

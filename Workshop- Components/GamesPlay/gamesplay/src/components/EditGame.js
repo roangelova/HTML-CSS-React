@@ -19,7 +19,7 @@ const EditGame = () => {
 
                     <label for="summary">Summary:</label>
                     <textarea name="summary" id="summary"></textarea>
-                    <input class="btn submit" type="submit" value="Edit Game" />
+                    <input className="btn submit" type="submit" value="Edit Game" />
 
                 </div>
             </form>

@@ -1,8 +1,8 @@
 const CreateGame = () => {
     return (
-        <section id="create-page" class="auth">
+        <section id="create-page" className="auth">
             <form id="create">
-                <div class="container">
+                <div className="container">
 
                     <h1>Create Game</h1>
                     <label for="leg-title">Legendary title:</label>
