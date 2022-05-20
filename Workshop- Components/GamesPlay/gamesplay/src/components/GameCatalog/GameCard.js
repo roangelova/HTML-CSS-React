@@ -1,13 +1,8 @@
-const GameCard = (
-    {
-        game,
-        navigationChangeHandler
-    }) => {
+import { Link } from "react-router-dom";
 
-    const onDetailsClick = (e) => {
-        e.preventDefault();
-        navigationChangeHandler(`/details/${game._id}`);
-    }
+const GameCard = ({
+    game
+}) => {
 
     return (
         <div className="allGames">
@@ -15,7 +10,7 @@ const GameCard = (
                 <img src={game.imageUrl} />
                 <h6>{game.category}</h6>
                 <h2>{game.title}</h2>
-                <a href={`details/${game._id}`} onClick={onDetailsClick} className="details-button">Details</a>
+                <Link to={`details/${game._id}`} className="details-button">Details</Link>
             </div>
 
         </div>
