@@ -1,7 +1,12 @@
-const LatestGameCard = ({ game }) => {
+const LatestGameCard = (
+    {
+        game,
+        navigationChangeHandler
+    }) => {
 
     const onDetailsClick = (e) => {
         e.preventDefault();
+        navigationChangeHandler(`/details/${game._id}`)
     }
 
     return (
