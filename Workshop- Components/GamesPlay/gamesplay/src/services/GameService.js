@@ -6,4 +6,5 @@ export function getAll() {
 }
 
 export const getOne = (id) =>
-    fetch(`${baseUrl}/games/${id}`).then(res => res.json());
+    fetch(`${baseUrl}/games/${id}`)
+        .then(res => res.json());
