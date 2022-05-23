@@ -1,4 +1,4 @@
-const MyPet = () => {
+const MyPets = () => {
     return (
         <section id="my-pets-page" className="my-pets">
             <h1>My Pets</h1>
@@ -25,4 +25,4 @@ const MyPet = () => {
     )
 }
 
-export default MyPet;
+export default MyPets;
